@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600$display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+a{
+    text-decoration: 0;
+    font-size: 18px;
+}
+
+/*Scrollbar CSS*/
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #4f4f4f;
+    border-radius: 30px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px ;
+   
+}
+/*header .block{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    
+}*/
+header  .logo{
+    display: flex;
+    align-items: center;
+}
+
+header  .logo img{
+    width: 50px;
+    height: 50px;
+}
+
+header .logo h1{
+    font-size: 40px;
+    color: #4f4f4f;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li {
+    margin-top: 30px;
+    margin-left: 50px;
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.menu li a{
+    color: #999;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.menu li a:hover{
+    color: crimson;
+    font-size: 30px;
+}
+.menu li :hover::after{
+    content: "";
+    position: absolute;
+    height: 30px;
+    z-index: -1;
+    width: 30px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+}
+
+.number{
+    margin-top: 30px;
+    font-size: 15px;
+    color: #fff;
+    padding: 18px 25px;
+    background: crimson;
+    border-radius: 60px;
+} 
+
+.number p a{
+    color: #fff;
+}
+body{
+    background-color: #191919;
+}
+
+/*home CSS */
+
+.home{
+    padding: 0 5%;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - 200px);
+    position: relative;
+    top: 100px;
+}
+
+.home .left{
+    width: 55%;
+}
+
+.home .right{
+    width: 40%;
+    height: 100%;
+}
+
+.home .right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px ;
+    object-position: top;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+}
+.home .left h1{
+    font-size: 70px;
+    color:crimson;
+    font-weight: 600;
+    padding: 0;
+    margin-bottom: -10px;
+    margin-left: -8px;
+
+}
+
+.home .left h1 span{
+    color: #4f4f4f;
+}
+
+.home .left h4{
+    font-weight: 500;
+    font: 25px;
+    margin-bottom: 10px;
+    color: #999;
+    text-transform:uppercase;
+}
+
+.home .left p{
+    font-size: 20px;
+    color: #999;
+}
+
+.buttom-link{
+    margin-top: 30px;
+    border: 0;
+    background: transparent;
+}
+
+.buttom-link a{
+    background-color: crimson;
+    border-radius: 60px;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    line-height: 2px;
+    transition: 0.9s;
+}
+
+.buttom-link a:hover{
+    background-color: transparent;
+    border: 1px solid crimson;
+}
+
+
+/*La section Compétences*/
+
+section{
+    padding: 0 5%;
+    margin-bottom: 50px;
+    position: relative;
+    top: 100px;
+    transition: .5s;
+    
+}
+
+.title {
+    text-transform: uppercase;
+    color: #4f4f4f;
+    font-size: 50px;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.title::after{
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: -30px;
+    z-index: -2;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: crimson;
+}
+
+.title::before{
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: -15px;
+    z-index: -1;
+    height: 30px;
+    width: 30px;
+    background-color: #191919;
+}
+
+.small_title{
+    font-size: small;
+    color: #999;
+}
+.list_Competences{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Competences{
+    border-radius: 20px;
+    box-shadow: 0 0 25 rgba(0, 0, 0, 0.45);
+    width: 270px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #131313;
+}
+.Competences img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.Competences h4{
+    font-size: 30px;
+}
+
+.Comptences p{
+    color: #4f4f4f;
+}
+
+
+
+/*La section Réalisations*/
+
+.title {
+    text-transform: uppercase;
+    color: #4f4f4f;
+    font-size: 50px;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.title::after{
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: -30px;
+    z-index: -2;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: crimson;
+}
+
+.title::before{
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: -15px;
+    z-index: -1;
+    height: 30px;
+    width: 30px;
+    background-color: #191919;
+}
+
+.small_title{
+    font-size: small;
+    color: #999;
+}
+.list_realisation{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.realisation{
+    border-radius: 20px;
+    box-shadow: 0 0 25 rgba(0, 0, 0, 0.45);
+    width: 270px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #131313;
+}
+.realisation img{
+    width: 190px;
+    margin-bottom: 10px;
+}
+
+.realisation h4{
+    font-size: 30px;
+}
+
+
+/*La section About*/
+
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+
+.about-text{
+    width: 550px;
+}
+
+.about-text h2{
+    color: #f2f2f2;
+    font-size: 55px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.about-text h5{
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text h5 span{
+    color: crimson;
+}
+
+.about-text p, ul {
+    color: #fcfc;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+
+
+ul li{
+    color: #fcfc;
+    list-style: none;
+}
+
+.about img{
+    height: 430px;
+    width: 400px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/*Parcours CSS*/
+
+.list_parcours{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.list_parcours h1{
+    font-size: 110px;
+    color: crimson;
+}
+
+.list_parcours .description{
+    margin-left: 20px;
+}
+
+.list_parcours .description h3{
+    color: #4f4f4f;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.list_parcours .description p{
+    font-size: 20px;
+    color: #999;
+}
+
+/*Contact CSS*/
+.form-image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-image form{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-image form input , textarea{
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #f2f2f2;
+    border: 0;
+    outline: 0;
+    resize: none;
+    width: 100%;
+}
+
+.form_btn{
+    width: fit-content;
+    margin-top: 20px;
+}
+
+.image{
+    width: 60%;
+}
+
+.image img{
+    width: 50%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+
+footer{
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    font-size: 15px;
+    padding: 10px;
+    position: relative;
+    top: 100px;
+}
+
+
+.small_menu{
+    display: none;
+}
+
+/*Mobile Responsive*/
+
+@media (max-width:1280px){
+    body{
+        width: 100%;
+    }
+    header .logo h1{
+        font-size: 15px;
+    }
+
+    header .logo img{
+        width: 30px;
+        height: 30px;
+    }
+
+    header .menu{
+        display:  none;
+    }
+
+    .number{
+        display: none;
+    }
+
+    .home{
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+    
+    .home .left , .home .right{
+        width: 100%;
+    }
+
+    .home .right{
+        height: 600px;
+        width: 90%;
+    }
+
+    .home .left{
+        margin: 20px 0;
+    }
+
+    .home .left h1{
+        font-size: 60px;
+    }
+
+    .home .left h4{
+        font-size: 18px;
+    }
+
+    .home .left p{
+        font-size: 11px;
+    }
+
+    .title{
+        font-size: 18px;
+    }
+
+    .list_Competences .Competences, .list_realisation .realisation{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .list_parcours h1{
+        font-size: 50px;
+    }
+
+    .about-text h2{
+        font-size: 40px;
+    }
+
+
+    .about-text{
+        width: 100%;
+    }
+
+    .about img{
+        width: 100%;
+    }
+
+    .main{
+        flex-direction: column;
+    }
+
+    .list_parcours .description h3{
+        font-size: 12px;
+    }
+    .list_parcours .description p{
+        font-size: 10px;
+    }
+
+    .form-image .image{
+        display: none;
+    }
+
+    .form-image form{
+        width: 100%;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+
+
+    /*Menu responsive*/
+    .small_menu{
+        display: flex;
+        width: 25px;
+        height: 25px;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+    .small_menu span{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: 0.5s;
+        transform: rotate(45deg);
+    }
+
+    .small_menu span div {
+        height: 11px;
+        width: 11px;
+        background-color: crimson;
+        border-radius: 6px;
+    }
+
+    .small_menu.active{
+        justify-content: center;
+        align-items: unset;
+    }
+
+    .small_menu.active span:nth-child(1){
+        display: none;
+    }
+
+    .small_menu.active span{
+        display: flex;
+        flex-direction: unset;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+    }
+
+    .small_menu.active span div{
+        height: 100%;
+        width: 3px;
+        border-radius: 6px;
+        transition: 0.5s;
+    }
+
+    header .menu.small{
+        display: flex;
+        position: absolute;
+        top: 50px;
+        background-color: #fff;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header .menu.small li {
+        margin: 15px 0;
+    }
+}
