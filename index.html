@@ -4,51 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Portfolio.css">
     <title>Portfolio</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Portfolio.css">
-    <title>Portfolio</title>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="IMAGES/MM.jpg" alt="photo">
-            <h1>CHRINOVIC MM</h1>
+    <nav>
+        <div class="profile">
+            <img src="MM.jpg" alt="Logo">
+            <h1>Chrinovic MM</h1>
         </div>
-            <ul class="menu" style="z-index: 10">
-                <li><a href="#">Acceuil</a></li>
-                <li><a href="#competeces">Compétences</a></li>
-                <li><a href="#Realisation">Réalisation</a></li>
-                <li><a href="#about">A propos</a></li>
-                <li><a href="#parcours">Mon parcours</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <ul class="menu">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Réalisation</a></li>
+            <li><a href="#about">A propos</a></li>
+            <li><a href="#parcours">Mon parcours</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <div class="number">
-            <p><a href="tel:+243991007401">(+243) 991007401</a></p>
-        </div>
-        <div class="small_menu">
-            <span>
-                <div></div>
-                <div></div>
-            </span>
-            <span>
-                <div></div>
-                <div></div>
-            </span>
-        </div>
-    </header>
-
+<section class="page">
     <!--home-->
-<section class="home">
+<section class="home" id="home">
     <div class="left">
         <h1>CHRINOVIC <span>MUKEBA</span></h1>
         <h4>Apprentis Développeur web</h4>
@@ -56,146 +35,116 @@
         <p>Je suis actuellement en pleine formation et je découvre de plus en plus des nouvelles choses dans ma pasion</p>
         <p>La technologie me possionne et je fait de mon mieux pour découvrir chaque jour de nouvelles choses ou personnes pouvant m'aider à avancer dans ma passion</p>
     <button class="buttom-link">
-        <a href="#contact">Me contacter</a>
+        <a href="#contact">Me contacter</a> 
     </button>
     </div>
     <div class="right">
-        <img src="IMAGES/home.jpg" alt="chrinovic MUKEBA">
+        <img src="home.jpg" alt="chrinovic MUKEBA">
     </div>
 </section>
 
 
-<!--Compétences-->
-
-<section class="Comptences" id="competeces">
-    <h1 class="title">Mes Compétences</h1>
-    <p>
-        Depuis un certain temps j'ai commencé à apprendre le développement web et au cours de ce temps j'ai pu acquérire quelques compétences
-    </p>
-    <div class="small_title">
-        <div class="list_Competences">
-            <div class="Competences">
-                <!--img src="IMAGES/html.png" alt=""-->
-                <h4>HTML 5</h4>
-                <p>En étant passionné du développement web, j'ai commencé mon apprantissage par  le html 
-                    et j'ai pu apprendre à structurer une page 
-                    web en utilisant des balises sémantiquement du html valide car en soit le 
-                    html est un language de balisage 
-                    permettant de créer des site web statique </p>
-                <button class="buttom-link">
-                    <a href="#contact">Me contacter</a>
-                </button>
-            </div>
-            <div class="Competences">
-                <!--img src="IMAGES/css.png" alt=""--->
-                <h4>CSS3</h4>
-                <p>Après avoir étudier le html j'ai pu apprendre à créer des site web statique 
-                    mais encore là il j'étais buté à un problème de beauté car les sites que je créais n'étais pas beau à voir
-                    et c'est là que j'ai commené à apprendre(que je continue d'ailleurs d'apprendre) le CSS pour mettre du style à mes site 
-                    mais encore là statique  
-                </p>
-                <button class="buttom-link">
-                    <a href="#contact">Me contacter</a>
-                </button>
-            </div>
-            <div class="Competences">
-                <!--img src="IMAGES/JAS.jfif" alt=""--->
-                <h4>JAVASCRIPT</h4>
-                <p>Après avoir appris les html et css je pouvais créer des site web statique et
-                     à ce moment j'ai commencé à apprendre le Javascript qui me permet de créer 
-                     des site web dynamique et interactive et aussi c'est le langage qui nous permet 
-                     d'ajouter de l'interactiviter sur un site </p>
-                <button class="buttom-link">
-                    <a href="#contact">Me contacter</a>
-                </button>
-            </div>
-            <div class="Competences">
-                <!--img src="IMAGES/git.png" alt=""-->
-                <h4>GIT</h4>
-                <p>Après avoir étudier le html et css j'ai commencé à développer 
-                    des petits sites statiques mais j'étais aussi buté à un problème qui 
-                    est celui dont je pouvais oublier facilement là où je me suis arrêté avant 
-                et cela me perturbais parfois et me décourrageais et c'est là que 
-                j'ai fais la découvert l'outil GIT qui est un outil de versionning ce qui me
-            permet de me situer où je me suis arrêté et comment continuer</p>
-                <button class="buttom-link">
-                    <a href="#contact">Me contacter</a>
-                </button>
-            </div>
+<section class="competences" id="competences">
+    <h1 class="title">COMPETENCES</h1>
+    <div class="competence">
+        <div class="compet">
+            <h4>LOREM IPSUM</h4>
+            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, ullam voluptates? Rerum quam esse ex sunt accusantium, repellendus temporibus voluptate eligendi repudiandae iste minus veniam culpa amet doloremque illo provident.</p>
+            <p class="date">Juin 2022</p>
         </div>
-    </div>
-</section>
 
+        <div class="compet">
+            <h4>LOREM IPSUM</h4>
+            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, ullam voluptates? Rerum quam esse ex sunt accusantium, repellendus temporibus voluptate eligendi repudiandae iste minus veniam culpa amet doloremque illo provident.</p>
+            <p class="date">Mais 2022</p>
+        </div>
 
-<!--Réalisation-->
-<section class="Realisation" id="Realisation">
-    <h1 class="title">Mes Réalisation</h1>
-    <p>
-        Depuis que j'ai commencé à apprendre à coder, j'ai eu à réaliser quelques projets et voici ceux que je considère réussi !
-    </p>
-    <div class="small_title">
-        <div class="list_realisation">
-            <div class="realisation">
-                <img src="IMAGES/restaurant.jpg" alt="Photo d'un humbergur">
-                <h4>Un site pour un restaurant</h4>
-                <p></p>
-                <button class="buttom-link">
-                    <a href="">Voir !</a>
-                </button>
-            </div>
-            <div class="realisation">
-                <img src="IMAGES/" alt="photo d'une calculatrice">
-                <h4>Une calculatrice</h4>
-                <p>
-                </p>
-                <button class="buttom-link">
-                    <a href="">Voir !</a>
-                </button>
-            </div>
+        <div class="compet">
+            <h4>LOREM IPSUM</h4>
+            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, ullam voluptates? Rerum quam esse ex sunt accusantium, repellendus temporibus voluptate eligendi repudiandae iste minus veniam culpa amet doloremque illo provident.</p>
+            <p class="date">Mars 2022</p>
+        </div>
 
+        <div class="compet">
+            <h4>LOREM IPSUM</h4>
+            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, ullam voluptates? Rerum quam esse ex sunt accusantium, repellendus temporibus voluptate eligendi repudiandae iste minus veniam culpa amet doloremque illo provident.</p>
+            <p class="date">Avril 2022</p>
+        </div>
 
-            <div class="realisation">
-                <img src="IMAGES/css.png" alt="photo d'un avion">
-                <h4>Un site de voyage</h4>
-                <p>
-                </p>
-                <button class="buttom-link">
-                    <a href="">Voir !</a>
-                </button>
-            </div>
+        <div class="compet">
+            <h4>LOREM IPSUM</h4>
+            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, ullam voluptates? Rerum quam esse ex sunt accusantium, repellendus temporibus voluptate eligendi repudiandae iste minus veniam culpa amet doloremque illo provident.</p>
+            <p class="date">Mars 2022</p>
         </div>
     </div>
 </section>
 
 
 
+    <section class="projets" id="projets">
+        <h1 class="title">Projets réaliser</h1>
+        <div class="projects">
+            <div class="project">
+               
+                
+                <h4>Calculatrice</h4>
+                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, ullam voluptates? Rerum quam esse ex sunt accusantium, repellendus temporibus voluptate eligendi repudiandae iste minus veniam culpa amet doloremque illo provident.</p>
+                <p class="date">Juin 2022</p> 
+                <button class="buttom-link">
+                    <a href="#contact">Voir</a> 
+                </button>
+            </div>
 
-<section class="about" id="about">
+            <div class="project">
+                
+                <h4>Site d'un restaurant</h4>
+                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, ullam voluptates? Rerum quam esse ex sunt accusantium, repellendus temporibus voluptate eligendi repudiandae iste minus veniam culpa amet doloremque illo provident.</p>
+                <p class="date">Mais 2022</p>
+                <button class="buttom-link">
+                    <a href="#contact">Voir</a> 
+                </button>
+            </div>
 
-    <div class="main">   
-                <img src="IMAGES/about.jpg" alt="chrinovic MUKEBA">
-        <div class="about-text">
-            <h2>A propos de moi</h2>
-            <h5>Développeur & <span>Apprentis</span></h5>
-            <p>Je m'appelle chrinovic MUKEBA, etudiant à l'école supérieure d'informatique 
-                salama en première licence, 
-                passionné de l'informatique en général et le développement web en 
-                particulier celà fait maintenant 3moi depuis que je me suis lancé 
-                dans la quête de la connaissance pendant ce temps j'ai pu acquérir quelques compétences 
-            telles que: <br><ul>
-                <li>Comment  créer et structurer un site web avec le html5</li>
-                <li>Comment styliser un site web avec le CSS3 (en cours)</li>
-                <li>Comment gérer mon code avec Git et Github</li>
-                <li>Et pour le moment j'apprens aussi le JS pour donner vie aux sites que je crée</li>
-            </ul></p>
-            <button class="buttom-link">
-                <a href="#contact">Me contacter</a>
-            </button>
+            <div class="project">
+                
+                <h4>Site air travels</h4>
+                <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, ullam voluptates? Rerum quam esse ex sunt accusantium, repellendus temporibus voluptate eligendi repudiandae iste minus veniam culpa amet doloremque illo provident.</p>
+                <p class="date">Mars 2022</p>
+                <button class="buttom-link">
+                    <a href="#contact">Voir</a> 
+                </button>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!--Section parcours-->
+
+    <section class="about" id="about">
+
+        <div class="main">   
+                    <img src="IMAGES/about.jpg" alt="chrinovic MUKEBA">
+            <div class="about-text">
+                <h2>A propos de moi</h2>
+                <h5>Développeur & <span>Apprentis</span></h5>
+                <p>Je m'appelle chrinovic MUKEBA, etudiant à l'école supérieure d'informatique 
+                    salama en première licence, 
+                    passionné de l'informatique en général et le développement web en 
+                    particulier celà fait maintenant 3moi depuis que je me suis lancé 
+                    dans la quête de la connaissance pendant ce temps j'ai pu acquérir quelques compétences 
+                telles que: <br><ul>
+                    <li>Comment  créer et structurer un site web avec le html5</li>
+                    <li>Comment styliser un site web avec le CSS3 (en cours)</li>
+                    <li>Comment gérer mon code avec Git et Github</li>
+                    <li>Et pour le moment j'apprens aussi le JS pour donner vie aux sites que je crée</li>
+                </ul></p>
+                <button class="buttom-link">
+                    <a href="#contact">Me contacter</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Section parcours-->
 <section class="parcours" id="parcours">
     <h1 class="title">Mon Parcours</h1>
     <div class="list_parcours">
@@ -222,44 +171,46 @@
     <div class="list_parcours">
         <h1>4</h1>
         <div class="description">
-            <h3>De Février 2022 à aujoued'hui</h3>
+            <h3>De Février 2022 à aujourd'hui</h3>
             <p> j'ai pu acquérir certaines compétences (HTML5, CSS3, GIT et JS(en cours)) telles que citées ci-déssus et continue toujours à me former au numérique</p>
         </div>
     </div>
    
 </section>
-<section class="contact" id="contact">
-    <h1 class="title">Me contacter</h1>
-    <div class="form-image">
-        <form>
-            <input type="text" placeholder="Votre prénom">
-            <input type="text" placeholder="Votre nom">
-            <input type="email" placeholder="Votre adresse Mail">
-            <input type="text" placeholder="L'objet du Message">
-            <textarea placeholder="Tapez votre Message " id="" cols="30" rows="10"></textarea>
-            <button class="buttom-link form_btn">
-                <a href="mailto:chrinovicmukeba123@gmail.com" type="submit">M'envoyer le Message</a>
-            </button>
-        </form>
-        <div class="image">
-            <img src="IMAGES/contact.jpg" alt="contact">
-        </div>
-    </div>
+
 </section>
 
 <footer>
-    <p>Site réaliser par Chris MMADev |All right reseved</p>
+    <div class="colonnes">
+        <h3>Mes services</h3>
+        <ul>
+            <li><a href="#">Développement des sites internets</a></li>
+            <li><a href="#">Le refférencement naturel (SEO)</a></li>
+            <li><a href="#">Création d'aplication Web</a></li>
+        </ul>
+    </div>
+    <div class="colonnes">
+        <h3>communautés</h3>
+        <ul>
+            <li><a href="#">DEVCUBE</a></li>
+            <li><a href="#">ESPACESIS</a></li>
+            <li><a href="#">CERCLE SCIENTIFIQUE MATH-INFO</a></li>
+            <li><a href="#">DEVSCAST</a></li>
+        </ul>
+    </div>
+    <div class="colonnes">
+        <h3>Medias socials</h3>
+        <ul>
+            <li><a href="mailto:chrinovicmukeba123@gmail.com">chrinovicmukeba123@gmail.com</a></li>
+            <li><a href="tel:0991009701">Numéro de teléphone</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Linkdin</a></li>
+            <li><a href="#">Telegram</a></li>
+            <li><a href="#">Github</a></li>
+        </ul>
+    </div>
 </footer>
-
-<script>
-    let small_menu = document.querySelector(".small_menu");
-    let menu = document.querySelector(".menu");
-    small_menu.onclick = function(){
-        small_menu.classList.toggle('active')
-        menu.classList.toggle('small')
-    }
-</script>
-</body>
-</html>
 </body>
 </html>

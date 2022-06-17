@@ -1,104 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600$display=swap');
-*{
+/*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
-}
-a{
-    text-decoration: 0;
-    font-size: 18px;
-}
+}*/
 
-/*Scrollbar CSS*/
-
-::-webkit-scrollbar{
-    width: 10px;
+body{
+    padding: 0 2%;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
 }
-
-::-webkit-scrollbar-thumb{
-    background-color: #4f4f4f;
-    border-radius: 30px;
-}
-
 header{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px ;
-   
-}
-/*header .block{
+    z-index: 1;
     position: fixed;
-    display: flex;
-    justify-content: space-between;
+    top: 0;
     background-color: white;
     width: 100%;
+    padding-right: 10%;
+}
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     
-}*/
-header  .logo{
+}
+
+header nav .profile{
     display: flex;
     align-items: center;
 }
 
-header  .logo img{
-    width: 50px;
-    height: 50px;
-}
-
-header .logo h1{
-    font-size: 40px;
-    color: #4f4f4f;
-}
-
-.menu{
-    display: flex;
-}
-
-.menu li {
-    margin-top: 30px;
-    margin-left: 50px;
-    position: relative;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.5s;
-}
-.menu li a{
-    color: #999;
-    font-size: 20px;
-    transition: 0.5s;
-}
-
-.menu li a:hover{
-    color: crimson;
-    font-size: 30px;
-}
-.menu li :hover::after{
-    content: "";
-    position: absolute;
-    height: 30px;
-    z-index: -1;
-    width: 30px;
-    background-color: #f2f2f2;
+header nav .profile img{
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
-.number{
-    margin-top: 30px;
-    font-size: 15px;
-    color: #fff;
-    padding: 18px 25px;
-    background: crimson;
-    border-radius: 60px;
-} 
+header nav .profile h1{
+    font-size: 30px;
+    margin-left: 10px;
+}
 
-.number p a{
-    color: #fff;
+header nav .menu{
+    display: flex;
+    width: auto;
+    position: relative;
+    right: 3%;
+    list-style-type: none; 
 }
-body{
-    background-color: #191919;
+
+header nav .menu li{
+    margin-left: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid white;
 }
+
+header nav .menu li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+}
+
+header nav .menu li a:hover{
+    border-bottom:3px solid #000;
+}
+
+.page{
+    margin: 4%;
+}
+
 
 /*home CSS */
 
@@ -110,7 +85,7 @@ body{
     justify-content: space-between;
     height: calc(100vh - 200px);
     position: relative;
-    top: 100px;
+    top: 40px;
 }
 
 .home .left{
@@ -168,6 +143,7 @@ body{
     border-radius: 60px;
     font-size: 15px;
     color: #fff;
+    text-decoration: none;
     padding: 10px 25px;
     text-transform: uppercase;
     line-height: 2px;
@@ -177,158 +153,100 @@ body{
 .buttom-link a:hover{
     background-color: transparent;
     border: 1px solid crimson;
+    color: crimson;
 }
 
 
-/*La section Compétences*/
+/*Section compéteces*/
 
-section{
-    padding: 0 5%;
-    margin-bottom: 50px;
-    position: relative;
-    top: 100px;
-    transition: .5s;
-    
+
+.page .competences{
+    margin-top: 10%;
 }
 
-.title {
+.page .competences h1{
     text-transform: uppercase;
-    color: #4f4f4f;
-    font-size: 50px;
-    position: relative;
-    margin-left: 20px;
-    margin-bottom: 30px;
-}
-
-.title::after{
-    content: "";
-    position: absolute;
-    top: 80%;
-    left: -30px;
-    z-index: -2;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    background: crimson;
-}
-
-.title::before{
-    content: "";
-    position: absolute;
-    top: 32px;
-    left: -15px;
-    z-index: -1;
-    height: 30px;
-    width: 30px;
-    background-color: #191919;
-}
-
-.small_title{
-    font-size: small;
-    color: #999;
-}
-.list_Competences{
-    margin: 30px 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.Competences{
-    border-radius: 20px;
-    box-shadow: 0 0 25 rgba(0, 0, 0, 0.45);
-    width: 270px;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-color: #131313;
-}
-.Competences img{
-    width: 100px;
-    margin-bottom: 10px;
-}
-
-.Competences h4{
     font-size: 30px;
 }
 
-.Comptences p{
-    color: #4f4f4f;
-}
-
-
-
-/*La section Réalisations*/
-
-.title {
-    text-transform: uppercase;
-    color: #4f4f4f;
-    font-size: 50px;
-    position: relative;
-    margin-left: 20px;
-    margin-bottom: 30px;
-}
-
-.title::after{
-    content: "";
-    position: absolute;
-    top: 80%;
-    left: -30px;
-    z-index: -2;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    background: crimson;
-}
-
-.title::before{
-    content: "";
-    position: absolute;
-    top: 32px;
-    left: -15px;
-    z-index: -1;
-    height: 30px;
-    width: 30px;
-    background-color: #191919;
-}
-
-.small_title{
-    font-size: small;
-    color: #999;
-}
-.list_realisation{
-    margin: 30px 0;
+.page .competences .competence{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
-.realisation{
-    border-radius: 20px;
-    box-shadow: 0 0 25 rgba(0, 0, 0, 0.45);
-    width: 270px;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-color: #131313;
-}
-.realisation img{
-    width: 190px;
-    margin-bottom: 10px;
+.page .competences .competence .compet{
+    max-width: 195px;
+    margin-right: 20px;
 }
 
-.realisation h4{
+
+.page .competences .competence .compet h4{
+    margin: 0;
+}
+
+.page .competences .competence .compet .description{
+    font-size: 10px;
+}
+
+
+.page .competences .competence .compet .date{
+    font-size: 10px;
+    color: rgb(145, 145, 145);
+}
+
+
+/*Section Projet*/
+
+.page .projets{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.page .projets h1{
+    text-transform: uppercase;
     font-size: 30px;
 }
 
+.page .projets .projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
-/*La section About*/
+.page .projets .projects .project{
+    max-width: 195px;
+    margin-right: 20px;
+}
+
+.page .projets .projects .project img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+
+.page .projets .projects .project h4{
+    margin: 0;
+}
+
+.page .projets .projects .project .description{
+    font-size: 10px;
+}
+
+
+.page .projets .projects .project .date{
+    font-size: 10px;
+    color: rgb(145, 145, 145);
+}
+
+
+
+
+
+
+/*About*/
+
 
 .about{
     width: 100%;
@@ -392,7 +310,17 @@ ul li{
 }
 
 
-/*Parcours CSS*/
+/*Parcous*/
+
+
+.title {
+    text-transform: uppercase;
+    color: #4f4f4f;
+    font-size: 50px;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
 
 .list_parcours{
     display: flex;
@@ -420,82 +348,50 @@ ul li{
     color: #999;
 }
 
-/*Contact CSS*/
-.form-image{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.form-image form{
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-}
-
-.form-image form input , textarea{
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 30px;
-    background-color: #f2f2f2;
-    border: 0;
-    outline: 0;
-    resize: none;
-    width: 100%;
-}
-
-.form_btn{
-    width: fit-content;
-    margin-top: 20px;
-}
-
-.image{
-    width: 60%;
-}
-
-.image img{
-    width: 50%;
-    object-fit: cover;
-    border-radius: 30px;
-}
 
 
 footer{
-    height: 50px;
-    color: #fff;
-    text-align: center;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     background-color: #000;
-    font-size: 15px;
+    color: aliceblue;
     padding: 10px;
-    position: relative;
-    top: 100px;
+}
+
+footer .colonnes h3{
+    text-transform: uppercase;
+}
+
+footer .colonnes ul{
+    list-style-type: none;
+}
+
+footer .colonnes ul li a{
+    list-style-type: none;
+    font-size: 15px;
+    color: #ccc;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer .colonnes ul li a:hover{
+    color: white;
 }
 
 
-.small_menu{
-    display: none;
-}
 
-/*Mobile Responsive*/
+@media screen and (max-width: 750px){
+     nav{
+        justify-content: center;
+     }
 
-@media (max-width:1280px){
-    body{
-        width: 100%;
-    }
-    header .logo h1{
-        font-size: 15px;
-    }
-
-    header .logo img{
-        width: 30px;
-        height: 30px;
-    }
-
-    header .menu{
-        display:  none;
-    }
-
-    .number{
+     header nav .menu{
         display: none;
+     }
+     .page{
+        margin-top: 30%;
     }
 
     .home{
@@ -528,19 +424,12 @@ footer{
         font-size: 11px;
     }
 
-    .title{
-        font-size: 18px;
-    }
-
-    .list_Competences .Competences, .list_realisation .realisation{
-        width: 100%;
-        margin-bottom: 50px;
-    }
-
     .list_parcours h1{
         font-size: 50px;
     }
 
+
+    
     .about-text h2{
         font-size: 40px;
     }
@@ -558,88 +447,28 @@ footer{
         flex-direction: column;
     }
 
-    .list_parcours .description h3{
-        font-size: 12px;
-    }
-    .list_parcours .description p{
-        font-size: 10px;
-    }
+     .page .presentation{
+        margin-top: 10px;
+        max-width: 100%;
+     }
 
-    .form-image .image{
-        display: none;
-    }
+     .page .projets{
+        margin-top: 15%;
+     }
 
-    .form-image form{
-        width: 100%;
-    }
+     .page .projets h1{
+        font-size: 2em;
+     }
+     .page .projets .projects .project{
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+     }
 
-    footer{
-        font-size: 10px;
-    }
-
-
-    /*Menu responsive*/
-    .small_menu{
-        display: flex;
-        width: 25px;
-        height: 25px;
-        align-items: center;
-        justify-content: space-between;
-        overflow: hidden;
-        border-radius: 50%;
-        transition: 0.5s;
-    }
-    .small_menu span{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        transition: 0.5s;
-        transform: rotate(45deg);
-    }
-
-    .small_menu span div {
-        height: 11px;
-        width: 11px;
-        background-color: crimson;
-        border-radius: 6px;
-    }
-
-    .small_menu.active{
-        justify-content: center;
-        align-items: unset;
-    }
-
-    .small_menu.active span:nth-child(1){
-        display: none;
-    }
-
-    .small_menu.active span{
-        display: flex;
-        flex-direction: unset;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-        transition: 0.5s;
-    }
-
-    .small_menu.active span div{
-        height: 100%;
-        width: 3px;
-        border-radius: 6px;
-        transition: 0.5s;
-    }
-
-    header .menu.small{
-        display: flex;
-        position: absolute;
-        top: 50px;
-        background-color: #fff;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    header .menu.small li {
-        margin: 15px 0;
-    }
+     footer{
+        justify-content: flex-end;
+     }
+     footer .colonnes{
+        width: 80%;
+     }
 }
