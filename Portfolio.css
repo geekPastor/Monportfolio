@@ -33,6 +33,10 @@ header nav .profile{
     align-items: center;
 }
 
+header nav .profile:hover{
+    cursor: pointer;
+}
+
 header nav .profile img{
     width: 40px;
     height: 40px;
