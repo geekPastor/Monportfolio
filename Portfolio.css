@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600$display=swap');
-/*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
-}*/
+} */
+
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     padding: 0 2%;
@@ -51,6 +55,7 @@ header nav .profile h1{
 
 header nav .menu{
     display: flex;
+    align-items: center;
     width: auto;
     position: relative;
     right: 3%;
@@ -393,6 +398,9 @@ footer .colonnes ul li a:hover{
 
 
 @media screen and (max-width: 750px){
+    body{
+        width: 100%;
+    }
      nav{
         justify-content: center;
      }
@@ -512,5 +520,47 @@ footer .colonnes ul li a:hover{
      }
      footer .colonnes{
         width: 80%;
+     }
+}
+
+@media screen and (max-width: 990px){
+    body{
+        width: 100;
+    }
+
+    header nav .menu{
+        display: none;
+     }
+
+     header nav .profile:hover .sub-menu{
+        display: block;
+        position: relative;
+        top: 50%;
+     }
+
+     header nav .profile:hover .sub-menu li .menu1{
+        display: inline-block;
+        width: auto;
+        position: relative;
+        right: 3%;
+        list-style-type: none; 
+
+     }
+
+     header nav .profile:hover .sub-menu li .menu1 li{
+        margin-left: 20px;
+        cursor: pointer;
+        border-bottom: 1px solid white;
+     }
+
+     header nav .profile:hover .sub-menu li .menu1 li a{
+        text-decoration: none;
+        color: #000;
+        font-size: 20px;
+        border-bottom: 1px solid white;
+     }
+
+     header nav .profile:hover .sub-menu li .menu1 li a:hover{
+        border-bottom:3px solid #000;
      }
 }
