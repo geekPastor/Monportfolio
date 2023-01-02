@@ -37,3 +37,38 @@ header{
     padding: 30px 18%;
     transition: .3s;
 }
+
+.logo img{
+    max-width: 100%;
+    width: 100px;
+    height: auto;
+}
+
+.nav__list{
+    display: flex;
+}
+.nav__list li{
+    position: relative;
+}
+
+.nav__list li a{
+    font-size: var(--p-font);
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 10px 27px;
+}
+
+.nav__list li a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: var(--main--color);
+    bottom: -3px;
+    left: 0;
+    transition: ease .40s;
+}
+
+.nav__list li a:hover::after{
+    width: 100%;
+}
